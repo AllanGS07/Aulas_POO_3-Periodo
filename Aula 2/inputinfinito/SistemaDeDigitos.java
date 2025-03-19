@@ -6,12 +6,15 @@ public class SistemaDeDigitos {
     public static void digitar(){
         int soma = 0;
         int quantidadeDeNumerosDigitados = 0;
-        int maiorNumero = 0;
-        int menorNumero = 0;
+        int maiorNumero;
+        int menorNumero;
 
+        int numero = scanner.nextInt();
+        maiorNumero = numero;
+        menorNumero = numero;
         while (true) {
             System.out.println("Digite um número: ");
-            int numero = scanner.nextInt();
+            numero = scanner.nextInt();
             if (numero == -1) {
                 break;
             }
@@ -25,7 +28,7 @@ public class SistemaDeDigitos {
             quantidadeDeNumerosDigitados++;
         }
         int media = soma / quantidadeDeNumerosDigitados;
-
+        
         System.out.println("A quantidade de números digitados é: " + quantidadeDeNumerosDigitados);
         System.out.println("O maior número digitado é: " + maiorNumero);
         System.out.println("O menor número digitado é: " + menorNumero);

@@ -12,7 +12,8 @@ public class FitaDna {
 
         if (sequenciaDna.length() != sequenciaDna2.length()) {
             System.out.println("Erro: as sequências devem ter o mesmo tamanho.");
-        } else {
+        }
+        else {
             int distanciaHamming = 0;
             for (int i = 0; i < sequenciaDna.length(); i++) {
                 if (sequenciaDna.charAt(i) != sequenciaDna2.charAt(i)) {
@@ -21,6 +22,7 @@ public class FitaDna {
             }
             System.out.println("A distância de Hamming é: " + distanciaHamming);
         }
+        scanner.close();
         scanner.close();
     }
 }
