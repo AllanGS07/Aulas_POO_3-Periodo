@@ -25,11 +25,17 @@ public class Main {
         emprestimo.renovar();
         emprestimo.renovar();
         emprestimo.renovar();
+
+        emprestimo.renovar();
+        emprestimo.renovar();
         emprestimo.renovar();
         emprestimo.renovar();
         emprestimo.renovar();
         
         int multaFinal = emprestimo.entregar();
         System.out.println("\nValor da multa: R$" + multaFinal);
+
+        Usuario usuario2 = new Usuario("Marcel", "12345678901", "marcel@gmail.com");
+        Emprestimo emprestimo2 = new Emprestimo(livro1, usuario2, "17/09/2025");
     }
 }
